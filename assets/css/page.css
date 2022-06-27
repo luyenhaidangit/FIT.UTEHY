@@ -14,6 +14,10 @@
     line-height: 32px;
 }
 
+.topbar__item > p{
+    display: inline;
+}
+
 .topbar__item:nth-child(2) {
     border-left: 1px solid rgba(255, 255, 255, 0.4);
     border-right: 1px solid rgba(255, 255, 255, 0.4);
@@ -502,6 +506,10 @@
 /* #region : reponsive 740px */
 
 @media only screen and (max-width: 740px) {
+    .topbar__item > p{
+        display: none;
+    }
+
     /* #region : reponsvie class*/
     .col-lg-6 {
         flex: 0 0 auto;
