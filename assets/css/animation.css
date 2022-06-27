@@ -1,0 +1,51 @@
+.get-out-left {
+    animation: getOutLeft 1s forwards;
+}
+
+.get-out-right {
+    animation: getOutRight 1s forwards;
+}
+
+.get-in-right {
+    animation: getInRight 1s forwards;
+}
+
+.get-in-left {
+    animation: getInLeft 1s forwards;
+}
+
+@-webkit-keyframes getOutLeft {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes getOutRight {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@-webkit-keyframes getInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes getInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
