@@ -10,16 +10,21 @@
     <!-- font -->
     <link rel="stylesheet" href="assets/font/font-awesome-pro-5/css/all.min.css">
     <!-- lib -->
-    <script src="lib/jquery-3.6.0/jquery-3.6.0.js"></script>
+    <script src="lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="lib/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="lib/slick-1.8.1/slick/slick-theme.css">
+    <script src="lib/slick-1.8.1/slick/slick.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/page.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <!-- js -->
     <script src="assets/js/page.js"></script>
+    <script src="assets/js/index.js"></script>
 </head>
 <body>
     <div class="main">
+        <!-- begin: header -->
         <header id="header">
             <!-- begin: topbar -->
             <div class="topbar">
@@ -266,9 +271,40 @@
             </div>
             <!-- end: navbar -->
         </header>
+        <!-- end: header -->
 
         <body id="body">
-            
+            <!-- begin: slider -->
+            <div class="slider-show">
+                <div class="slider-wrap">
+                    <div class="slider active" id="slider1">
+                        <img class="slider__img img-cover-center" src="assets/img/slider/slider_1.jpg" alt="slider1">
+                    </div>
+
+                    <div class="slider" id="slider2">
+                        <img class="slider__img img-cover-center" id="slider2" src="assets/img/slider/slider_2.jpg" alt="slider1">
+                    </div>
+
+                    <div class="slider" id="slider3">
+                        <img class="slider__img img-cover-center" id="slider3" src="assets/img/slider/slider_3.jpg" alt="slider1">
+                    </div>
+
+                    <div class="slider" id="slider3">
+                        <img class="slider__img img-cover-center" id="slider3" src="assets/img/slider/slider_4.jpg" alt="slider1">
+                    </div>
+                </div>
+
+                <div class="btn__wrap">
+                    <div class="btn--cricle slider__btn--left flex-center">
+                        <i class="far fa-angle-left"></i>
+                    </div>
+
+                    <div class="btn--cricle slider__btn--right flex-center">
+                        <i class="far fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- end: slider -->
         </body>
 
         <footer id="footer">
