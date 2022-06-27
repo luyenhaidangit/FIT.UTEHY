@@ -1,5 +1,7 @@
 $(document).ready(function () {
     mainSlider();
+
+    activitiSlider();
 });
 
 //Main slider
@@ -12,5 +14,18 @@ function mainSlider(){
         prevArrow: $('.slider__btn--left'),
         nextArrow: $('.slider__btn--right'),
     });
+}
+
+
+
+//Activiti slider
+function activitiSlider(){
+    $('.activiti-body__wrap').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.activiti__btn--left'),
+        nextArrow: $('.activiti__btn--right'),
+      });
 }
 

@@ -49,3 +49,32 @@
         transform: translateX(0%);
     }
 }
+
+.slick {
+    transition: transform 0.5s ease;
+}
+
+.slick--left {
+    transform: translateX(calc(-100% - 40px));
+}
+
+.slick--right {
+    transform: translateX(calc(100% + 40px));
+}
+
+.slick--default {
+    transform: translateX(0);
+}
+
+.left-slick {
+    animation: 0.5s left-slick ease;
+}
+
+@keyframes left-slick {
+    0% {
+        transform: translateX(calc(-600% - 240px));
+    }
+    100% {
+        transform: translateX(calc(-500% - 200px));
+    }
+}
