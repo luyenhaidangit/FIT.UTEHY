@@ -16,3 +16,15 @@ a {
 li {
     list-style: none;
 }
+
+/* scrollbar */
+body::-webkit-scrollbar {
+    width: 7px;
+}
+body::-webkit-scrollbar-track {
+    background: #ddd;
+}
+body::-webkit-scrollbar-thumb {
+    background: #3f3f3f;
+    border-radius: 20px;
+}

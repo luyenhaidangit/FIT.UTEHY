@@ -1,4 +1,6 @@
 window.addEventListener('load', (event) => {
+    loading();
+
     toggleSearchForm();
   });
 
@@ -19,5 +21,16 @@ function toggleSearchForm(){
         searchInput.value = "";
         searchWrap.style.display = "none";
     });
+}
+
+//loading
+function loading(){
+    $('.loading__bar').delay(1500).animate({left: '0'}, 1000);
+    $('.loading__box').delay(500).animate({opacity: '1'}, 1000);
+    $('.loading__circle').delay(3000).animate({opacity: '0'}, 500);
+    setTimeout(() => {
+        $(".loading").css("display","none");
+        $(".main").css("display","block");
+    }, 3000);
 }
 
